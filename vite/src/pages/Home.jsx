@@ -69,6 +69,7 @@ function Home() {
           </div>
         </div>
         <img
+
           src={imggg}
           alt=""
           className="h-[400px] md:h-[500px] w-[600px] md:w-[468.9px]"
@@ -97,6 +98,9 @@ function Home() {
             to empower our clients.
           </p>
           <img src={aw} alt="" />
+          <h1></h1>
+          <h1></h1>
+          <h1></h1>
         </div>
         <div>
           <Carousel
