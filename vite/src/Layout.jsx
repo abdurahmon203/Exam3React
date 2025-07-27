@@ -14,8 +14,8 @@ const Layout = () => {
     }, 2000);
   };
   return (
-    <div className="bg-[#1E212C] text-white px-[80px] ">
-      <div className="flex justify-between items-center py-4 mb-[120px] ">
+    <div className="bg-[#1E212C] text-white ">
+      <div className="px-[80px] flex justify-between items-center py-4 mb-[120px] ">
         <div className="flex items-center gap-[30px]">
           <img src={logo} alt="Logo" className="h-6" />
           <ul className="hidden md:flex gap-[20px] text-gray-500 text-sm">

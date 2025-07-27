@@ -43,7 +43,6 @@ const UserById = () => {
         variant="outlined"
         className="w-[300px] md:w-[1050px] "
         sx={{
-          marginLeft: -6,
           p: 4,
           borderRadius: 3,
           boxShadow: 6,

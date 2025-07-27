@@ -129,9 +129,7 @@ const Users = () => {
   const editData = async (id) => {
     try {
       await axios.put(`https://to-dos-api.softclub.tj/completed?id=${id}`);
-      GetData();
-
-      
+      GetData();  
     } catch (error) {
       console.error(error);
     }
