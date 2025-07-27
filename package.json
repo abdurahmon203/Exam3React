@@ -13,5 +13,8 @@
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11",
     "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "vite": "^7.0.6"
   }
 }
