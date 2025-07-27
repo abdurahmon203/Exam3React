@@ -230,6 +230,59 @@ function About() {
           </button>
         </div>
       </div>
+      <div className="bg-white py-[80px] px-[80px] ">
+        <h2 className="text-[46px] text-[#1E212C] text-center font-bold">
+          That’s how it works
+        </h2>
+        <div className="flex flex-row-reverse justify-center mt-[50px] gap-[100px] ">
+          <div>
+            <p className="text-[#787A80] text-[12px] font-semibold">STEP 1</p>
+            <p className="font-bold py-[10px] text-[#1E212C] text-[20px] ">
+              Off-Site SEO Analysis
+            </p>
+            <p className="text-[#787A80] md:w-[340px] ">
+              Aliquam turpis viverra quam sit interdum blandit posuere
+              pellentesque. Nisl, imperdiet gravida massa neque.
+            </p>
+          </div>
+          <div className="mt-[200px] ">
+            <p className="text-[#787A80] text-[12px] font-semibold">STEP 2</p>
+            <p className="font-bold py-[10px] text-[#1E212C] text-[20px] ">
+              Technical SEO Optimizations
+            </p>
+            <p className="text-[#787A80] md:w-[340px] ">
+              Facilisis pellentesque quis accumsan ultricies. Eu egestas eget
+              feugiat lacus, amet, sollicitudin egestas laoreet etiam. Nunc nisl
+              orci auctor et fames. Vestibulum viverra faucibus faucibus et
+              convallis.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-row-reverse justify-center mt-[50px] gap-[100px] ">
+          <div>
+            <p className="text-[#787A80] text-[12px] font-semibold">STEP 3</p>
+            <p className="font-bold py-[10px] text-[#1E212C] text-[20px] ">
+              Usability Check
+            </p>
+            <p className="text-[#787A80] md:w-[340px] ">
+              Eget amet, enim pharetra leo egestas nisi, odio imperdiet
+              facilisis. Aliquet orci varius volutpat egestas facilisi lobortis.
+              Varius praesent pretium in leo, accumsan, in ultricies.
+            </p>
+          </div>
+          <div className="mt-[200px] ">
+            <p className="text-[#787A80] text-[12px] font-semibold">STEP 4</p>
+            <p className="font-bold py-[10px] text-[#1E212C] text-[20px] ">
+              Content Marketing
+            </p>
+            <p className="text-[#787A80] md:w-[340px] ">
+              Non tempor pulvinar tincidunt aliquam. Placerat ultricies
+              malesuada dui auctor. Faucibus in leo, nulla odio nulla imperdiet
+              quis faucibus neque.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="px-[80px] py-[80px] bg-white ">
         <h1 className="text-[#1E212C] text-[46px] text-center font-bold ">
           Flexible pricing plans
@@ -469,9 +522,6 @@ function About() {
                 </button>
                 <button className="md:ml-[0px] bg-[#7772F1] py-[10px] px-[30px] rounded-[4px] ">
                   More about us
-                  <h1></h1>
-                  <h1></h1>
-                  <h1></h1>
                 </button>
               </div>
             </div>

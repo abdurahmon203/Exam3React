@@ -98,9 +98,6 @@ function Home() {
             to empower our clients.
           </p>
           <img src={aw} alt="" />
-          <h1></h1>
-          <h1></h1>
-          <h1></h1>
         </div>
         <div>
           <Carousel

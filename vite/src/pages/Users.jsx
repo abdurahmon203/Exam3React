@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Api, ImageApi } from "../config/api";
 import { Link } from "react-router-dom";
+import * as Yup from "yup";
 import {
   Box,
   Modal,
@@ -51,12 +52,18 @@ const Users = () => {
     GetData();
   }, []);
 
+  const validationSchema = Yup.object({
+    Name: Yup.string().required("Name is required"),
+    Description: Yup.string().required("Description is required"),
+  });
+
   const formik = useFormik({
     initialValues: {
       Name: "",
       Description: "",
       Images: null,
     },
+    validationSchema,
     onSubmit: async (values, { resetForm }) => {
       const formData = new FormData();
       formData.append("name", values.Name);
@@ -129,7 +136,7 @@ const Users = () => {
   const editData = async (id) => {
     try {
       await axios.put(`https://to-dos-api.softclub.tj/completed?id=${id}`);
-      GetData();  
+      GetData();
     } catch (error) {
       console.error(error);
     }
@@ -158,7 +165,11 @@ const Users = () => {
               margin="normal"
               value={formik.values.Name}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              error={formik.touched.Name && Boolean(formik.errors.Name)}
+              helperText={formik.touched.Name && formik.errors.Name}
             />
+
             <TextField
               fullWidth
               label="Description"
@@ -166,7 +177,15 @@ const Users = () => {
               margin="normal"
               value={formik.values.Description}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              error={
+                formik.touched.Description && Boolean(formik.errors.Description)
+              }
+              helperText={
+                formik.touched.Description && formik.errors.Description
+              }
             />
+
             <Button
               component="label"
               variant="outlined"
@@ -176,6 +195,7 @@ const Users = () => {
               Upload Image
               <input hidden type="file" onChange={handleFileChange} />
             </Button>
+
             <Box textAlign="right" mt={3}>
               <Button type="submit" variant="contained">
                 Submit
