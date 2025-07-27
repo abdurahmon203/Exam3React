@@ -20,6 +20,7 @@ import ic5 from "./ic5.svg";
 import ic6 from "./ic6.svg";
 import imgl from "./imgl.svg";
 import card1 from "./card1.svg";
+
 import hover from "./hover.svg";
 import card2 from "./card2.svg";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -468,6 +469,9 @@ function About() {
                 </button>
                 <button className="md:ml-[0px] bg-[#7772F1] py-[10px] px-[30px] rounded-[4px] ">
                   More about us
+                  <h1></h1>
+                  <h1></h1>
+                  <h1></h1>
                 </button>
               </div>
             </div>
